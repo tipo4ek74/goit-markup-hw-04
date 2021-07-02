@@ -11,6 +11,7 @@
     --bg-color: #2F303A;
     --team-bg:#F5F4FA;
     --bg-btn-portfolio: #F5F4FA;
+    --hero-bg: #C4C4C4;
   }
 
 h1,
@@ -73,11 +74,11 @@ body {
 }
   
   
-  .modal-btn:hover,
-  .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
     background-color: var(--button-hover-color);
     color: var(--button-text-hover-color);
-  }
+}
   
 
 /* ============= END COMPONENTS ============= */
@@ -117,8 +118,12 @@ body {
     cursor: pointer;
 }
 
+.menu-contact-link {
+    
+}
+
 .menu-contact-link:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .menu-item:not(:last-child) {
@@ -160,9 +165,44 @@ body {
 
 .menu-link.current {
     color: var(--accent-color);
+    background-image: url();
+}
+
+.mail-link.header-link {
+    display: flex;
+    align-items: center;
 }
 
 
+.mail-link.header-link::before {
+    content: url("../images/envelope.svg");
+    display: flex;
+    
+    align-items: center;
+    width: 16px;
+    height: 12px;
+    fill: ;
+    margin-right: 10px;
+
+    
+    
+}
+
+.menu-link.current::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: relative;
+    top: 28px;
+    left: auto;
+    
+    
+}
+
+/*
+*/
 .logo {
     margin-right: 93px;
     font-family: var(--secondary-font);
@@ -189,9 +229,18 @@ body {
     align-items: center;
     flex-direction: column;
     width: 1600px;
-    background-color: var(--bg-color);
+    background-color: var(--hero-bg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url(../images/Hero/hero.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+
+    position: relative;
+    bottom: 1px;
+    right: auto;
 }
 
 .hero-title {
@@ -361,7 +410,7 @@ body {
     
 }
 
-.logo.current {
+.footer-logo .logo {
     color: var(--logo-color);
     
 }
@@ -421,13 +470,13 @@ body {
     margin-left: 30px;
 }
 
-/*.portfolio-box:hover,
+.portfolio-box:hover,
 .portfolio-box:focus {
     box-shadow: 0px 1px 1px 
     rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}*/
+}
 
 .portfolio-text {
     padding: 20px 24px;
