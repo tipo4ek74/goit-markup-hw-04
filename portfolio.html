@@ -22,8 +22,8 @@
                     Web</span>Studio
                 </a>
                 <ul class="menu list">
-                    <li class="menu-item">
-                        <a class="menu-link link" href="./index.html">Студия</a>
+                    <li class="menu-item current">
+                        <a class="menu-link link " href="./index.html">Студия</a>
                     </li>
                     <li class="menu-item">
                         <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
@@ -36,10 +36,19 @@
             
         <ul class="menu-contact list">
             <li class="menu-contact-link">
-                <a class="mail-link link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="mail-link link header-link" href="mailto:info@devstudio.com">
+                    <svg class="contact-link-item header-link" width="16px" height="12px">
+                        <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com  
+                </a>
             </li>
-            <li class="">
-                <a class="tel-link link header-link" href="tell:+380961111111">+38 096 111 11 11</a>
+            <li class="menu-contact-link">
+                <a class="tel-link link header-link" href="tell:+380961111111">
+                    <svg class="contact-link-item header-link" width="10px" height="16px">
+                        <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
             </li>
         </ul>
         </div>
@@ -120,20 +129,56 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <a class="logo link current" href="./"> <span class="logo-span">Web</span>Studio</a>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a class="logo link" href="./"> <span class="logo-span">Web</span>Studio</a>
+                </div>
+                
+                <!-- CONTACT INFORMATION -->
+                <address id="contact" class="address">
+                    <ul class="list address-container">
+                        <li class="address-item-footer"><a class="address-link link" href="https://goo.gl/maps/P6TTpQ2vvZoRG6vYA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address-item-footer"><a class="mail-link link footer-link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="address-item-footer"><a class="tel-link link footer-link" href="tell:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+                
+            <div class="social">
+                    <h2 class="footer-title">присоединяйтесь</h2>
+                    <ul class="social-list list">
+                        <li href="" class="social-list-item">
+                            <a href="" class="social-list-link theme-dark">
+                                <svg class="social-list-icon theme-dark">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li href="" class="social-list-item">
+                            <a href="" class="social-list-link theme-dark">
+                                <svg class="social-list-icon theme-dark">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li href="" class="social-list-item">
+                            <a href="" class="social-list-link theme-dark">
+                                <svg class="social-list-icon theme-dark">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li href="" class="social-list-item">
+                            <a href="" class="social-list-link theme-dark">
+                                <svg class="social-list-icon theme-dark">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
             </div>
-            
-            <!-- CONTACT INFORMATION -->
-            <address id="contact">
-                <ul class="list address-container">
-                    <li class="address-item-footer"><a class="address-link link" href="https://goo.gl/maps/P6TTpQ2vvZoRG6vYA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="address-item-footer"><a class="mail-link link footer-link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="address-item-footer"><a class="tel-link link footer-link" href="tell:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
         </div>
+        
     </footer>   
 
 </body>

@@ -521,11 +521,12 @@ body {
 }
 
 .footer {
+    /*height: 251px;*/
     background-color: var(--bg-color);
 }
 
 .footer-container {
-    height: 252px;
+    height: 131px;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -556,24 +557,24 @@ body {
     
 }
 .footer-logo {
-    display: flex;
+    /*display: flex;*/
     width: 150px;
     height: 30px;
     margin-bottom: 20px;
 }
 
 .social {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     width: 206px;
     height: 80px;
 }
 
 .address {
-    display: flex;
+    /*display: flex;*/
     width: 231px;
     height: 81px;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 .social-list-link.theme-dark {
