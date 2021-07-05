@@ -84,7 +84,6 @@ body {
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
-
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -119,7 +118,9 @@ body {
 }
 
 .menu-contact-link {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-contact-link:not(:last-child) {
@@ -139,6 +140,7 @@ body {
 
 .header-link {
     color: var(--description-color);
+    fill: var(--description-color);
 }
 
 .tel-link,
@@ -154,8 +156,11 @@ body {
 }
 
 .mail-link:hover,
-.mail-link:focus {
+.mail-link:focus,
+.mail-link:hover .contact-link-item,
+.mail-link:focus .contact-link-item {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .tel-link:hover,
@@ -166,6 +171,12 @@ body {
 .menu-link.current {
     color: var(--accent-color);
     background-image: url();
+}
+
+.contact-link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*.mail-link.header-link {
@@ -298,6 +309,8 @@ body {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
+    background-color: var(--team-bg);
+    border-radius: 4px;
 }
 
 .serveces-box-item {
@@ -492,11 +505,21 @@ body {
 
 /* ============= FOOTER ============= */
 
+.footer-title {
+    color: var(--logo-color);
+    margin-bottom: 20px;
+}
+
 .footer {
     background-color: var(--bg-color);
 }
 
 .footer-container {
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -523,7 +546,36 @@ body {
     
 }
 .footer-logo {
+    display: flex;
+    width: 150px;
+    height: 30px;
     margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    height: 80px;
+}
+
+.address {
+    display: flex;
+    width: 231px;
+    height: 81px;
+    flex-direction: column;
+}
+
+.social-list-link.theme-dark {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.social-list-link.theme-dark:hover {
+    background-color: var(--accent-color);
+}
+
+.social-list-icon.theme-dark {
+    fill: var(--logo-color);
 }
 
 /* ============= END FOOTER ============= */
