@@ -526,17 +526,21 @@ body {
 .footer {
     /*height: 251px;*/
     background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
-    height: 131px;
+    height: 130px;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: left;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
+
+/*.address-container {
+    height: 131px;
+}*/
 
 .address-item-footer:not(:last-child) {
     margin-bottom: 9px;
