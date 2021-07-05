@@ -164,7 +164,9 @@ body {
 }
 
 .tel-link:hover,
-.tel-link:focus {
+.tel-link:focus, 
+.tel-link:hover .contact-link-item,
+.tel-link:focus .contact-link-item  {
     color: var(--accent-color);
 }
 
