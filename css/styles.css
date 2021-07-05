@@ -177,14 +177,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
 }
 
-/*.mail-link.header-link {
+.mail-link.header-link {
     display: flex;
     align-items: center;
 }
 
+.tel-link.header-link {
+    display: flex;
+    align-items: center;
+}
 
+/*
 .mail-link.header-link::before {
     content: url("../images/sprite.svg#envelope");
     display: flex;
@@ -195,10 +201,7 @@ body {
     margin-right: 10px;
 }
 
-.tel-link.header-link {
-    display: flex;
-    align-items: center;
-}
+
 
 .tel-link.header-link::before {
     content: url("../images/sprite.svg#smartphone");
