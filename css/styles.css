@@ -12,6 +12,7 @@
     --team-bg:#F5F4FA;
     --bg-btn-portfolio: #F5F4FA;
     --hero-bg: #C4C4C4;
+    --social-bg: #AFB1B8;
   }
 
 h1,
@@ -386,7 +387,7 @@ body {
 .social-list-icon {
     width: 20px;
     height: 20px;
-    fill: var(--description-color);
+    fill: var(--social-bg);
 }
 
 .social-list-link {
